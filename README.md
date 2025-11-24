@@ -48,9 +48,18 @@ Needs `GITHUB_TOKEN` passed as env variable, e.g:
       files: gomarkdoc.tar.gz
 ```
 
+PS remember to update package permission to allow read for the downloading repository.
+
 ### Upload workflow
 
 ```yaml
 permissions:
   packages: write
+```
+
+### Download workflow
+
+```yaml
+permissions:
+  packages: read
 ```
